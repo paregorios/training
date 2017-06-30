@@ -95,7 +95,11 @@
         <div type="textpart" n="2" xml:id="part2">
           <head>Title of Second Part</head>
           <!--Each new major section (e.g., book, volume) has a new <div>.-->
-            <p><lb/>When chickens attack! Fi<lb break="no"/>lm at eleven.</p>
+            <lb/><l>My chicken has a first name,</l>
+            <lb/><l>It's <lb/> R E B E L .</l>
+            <lb/><l>My chicken has a second name.</l>
+                <lb/><l>It's <lb/> R E B E L .</l>
+                
         </div>
       </div>
     </body>
