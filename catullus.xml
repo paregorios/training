@@ -5,7 +5,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Title of Work</title>
+        <title>Banana</title>
         <author>Name of Author</author>
         <editor>Name of Editor</editor>
       </titleStmt>
@@ -52,14 +52,45 @@
           <!--A key to the special sigla and abbreviations used in the edition (drawn
           from the @xml:id's assigned to the various items in the
           bibliography). The list of sigla may be generated automatically. -->
+            <listWit>
+                <witness xml:id="servius"><abbr type="siglum">Servius</abbr></witness>
+                <witness xml:id="past"><abbr type="siglum">Pastrengicus</abbr></witness>
+                <witness xml:id="V"><abbr type="siglum">V</abbr> = <title>fons communis codicum OGR</title> 1280?</witness>
+                <witness xml:id="O"><abbr type="siglum">O</abbr> = <title>Oxoniensis Bodleianus Canonicianus class. lat. 30</title></witness>
+                <witness xml:id="G"><abbr type="siglum">G</abbr> = <title>Parisinus lat.  14137</title></witness>
+                <witness xml:id="R"><abbr type="siglum">R</abbr> = <title>Vaticanus Ottobonianus lat. 1829</title></witness>
+            </listWit>
         </div>
       </div>
     </front>
     <body>
-      <div type="edition" xml:id="edition-text" xml:space="preserve">
+      <div type="edition" xml:id="edition-text">
         <div type="textpart" n="1" xml:id="part1">
           <head>Title of First Part</head>
           <!--Text goes here, according to the conventions laid out elsewhere in these guidelines.-->
+            <l>Cui dono lepidum novum libellum</l>
+            <l><app>
+                            <lem wit="#servius #past #V">arida</lem>
+                            <witDetail wit="#V">?</witDetail>
+                            <rdg wit="#O #G #R">arido</rdg>
+                        </app> modo 
+                        <app>
+                            <lem>pumice</lem>
+                            <rdg>punice</rdg>
+                            <witDetail wit="#R">corr. <ref target="#R2">R<hi rend="superscript"
+                                        >2</hi></ref></witDetail>
+                        </app> expolitum?</l>
+            <l>Corneli, tibi: namque tu solebas</l>
+<l>meas esse aliquid putare nugas</l>
+<l>iam tum, cum ausus es unus Italorum</l>
+<l>omne aevum tribue explicare cartis</l>
+<l>doctis, Iuppiter, et laboriosis.</l>
+<l>quare habe tibi quidquid hoc libelli.</l>
+<l>qualecumque quod, <supplied reason="lost">o</supplied> patrona virgo,</l>
+<l>plus uno maneat perenne saeclo.</l>
+            
+            
+
         </div>
         <div type="textpart" n="2" xml:id="part2">
           <head>Title of Second Part</head>
